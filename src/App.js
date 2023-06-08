@@ -26,10 +26,10 @@ const App = () => {
   return (
     <div>
       <h1>Aplikasi Penilaian Mahasiswa</h1>
-      <table border={1} cellPadding={5} cellSpacing={0}>
+      <table border={1} cellPadding={10} cellSpacing={0}>
         <thead>
           <th>
-            <th>Mahasiswa</th>
+            <tr>Mahasiswa</tr>
             {[...Array(10)].map((_, index) => (
               <tr key={index}>
                 {/* <input placeholder="Mahasiswa ke " /> */}
@@ -38,7 +38,7 @@ const App = () => {
             ))}
           </th>
           <th>
-            <th>Aspek Penilaian 1</th>
+            <tr>Aspek Penilaian 1</tr>
             {[...Array(10)].map((_, index) => (
               <tr key={index}>
                 <input
@@ -57,7 +57,7 @@ const App = () => {
             ))}
           </th>
           <th>
-            <th>Aspek Penilaian 2</th>
+            <tr>Aspek Penilaian 2</tr>
             {[...Array(10)].map((_, index) => (
               <tr key={index}>
                 <input
@@ -76,7 +76,7 @@ const App = () => {
             ))}
           </th>
           <th>
-            <th>Aspek Penilaian 3</th>
+            <tr>Aspek Penilaian 3</tr>
             {[...Array(10)].map((_, index) => (
               <tr key={index}>
                 <input
@@ -95,7 +95,7 @@ const App = () => {
             ))}
           </th>
           <th>
-            <th>Aspek Penilaian 4</th>
+            <tr>Aspek Penilaian 4</tr>
             {[...Array(10)].map((_, index) => (
               <tr key={index}>
                 <input
