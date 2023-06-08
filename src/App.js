@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 
 const App = () => {
   const [penilaian, setPenilaian] = useState({
@@ -25,28 +26,21 @@ const App = () => {
   return (
     <div>
       <h1>Aplikasi Penilaian Mahasiswa</h1>
-      <table>
+      <table border={1} cellPadding={5} cellSpacing={0}>
         <thead>
-          <tr>
-            <th></th>
-            <th>Mahasiswa 1</th>
-            <th>Mahasiswa 2</th>
-            <th>Mahasiswa 3</th>
-            <th>Mahasiswa 4</th>
-            <th>Mahasiswa 5</th>
-            <th>Mahasiswa 6</th>
-            <th>Mahasiswa 7</th>
-            <th>Mahasiswa 8</th>
-            <th>Mahasiswa 9</th>
-            <th>Mahasiswa 10</th>
-          </tr>
-        </thead>
-
-        <tbody>
-          <tr>
-            <td>Aspek Penilaian 1</td>
+          <th>
+            <th>Mahasiswa</th>
             {[...Array(10)].map((_, index) => (
-              <td key={index}>
+              <tr key={index}>
+                {/* <input placeholder="Mahasiswa ke " /> */}
+                <p>Mahasiswa ke {index + 1}</p>
+              </tr>
+            ))}
+          </th>
+          <th>
+            <th>Aspek Penilaian 1</th>
+            {[...Array(10)].map((_, index) => (
+              <tr key={index}>
                 <input
                   type="number"
                   min="1"
@@ -59,13 +53,13 @@ const App = () => {
                     )
                   }
                 />
-              </td>
+              </tr>
             ))}
-          </tr>
-          <tr>
-            <td>Aspek Penilaian 2</td>
+          </th>
+          <th>
+            <th>Aspek Penilaian 2</th>
             {[...Array(10)].map((_, index) => (
-              <td key={index}>
+              <tr key={index}>
                 <input
                   type="number"
                   min="1"
@@ -78,13 +72,13 @@ const App = () => {
                     )
                   }
                 />
-              </td>
+              </tr>
             ))}
-          </tr>
-          <tr>
-            <td>Aspek Penilaian 3</td>
+          </th>
+          <th>
+            <th>Aspek Penilaian 3</th>
             {[...Array(10)].map((_, index) => (
-              <td key={index}>
+              <tr key={index}>
                 <input
                   type="number"
                   min="1"
@@ -97,13 +91,13 @@ const App = () => {
                     )
                   }
                 />
-              </td>
+              </tr>
             ))}
-          </tr>
-          <tr>
-            <td>Aspek Penilaian 4</td>
+          </th>
+          <th>
+            <th>Aspek Penilaian 4</th>
             {[...Array(10)].map((_, index) => (
-              <td key={index}>
+              <tr key={index}>
                 <input
                   type="number"
                   min="1"
@@ -116,10 +110,12 @@ const App = () => {
                     )
                   }
                 />
-              </td>
+              </tr>
             ))}
-          </tr>
-        </tbody>
+          </th>
+        </thead>
+
+        <tbody></tbody>
       </table>
       <button onClick={handleSimpan}>Simpan</button>
     </div>
