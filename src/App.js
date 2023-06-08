@@ -28,6 +28,22 @@ const App = () => {
       <table>
         <thead>
           <tr>
+            <th></th>
+            <th>Mahasiswa 1</th>
+            <th>Mahasiswa 2</th>
+            <th>Mahasiswa 3</th>
+            <th>Mahasiswa 4</th>
+            <th>Mahasiswa 5</th>
+            <th>Mahasiswa 6</th>
+            <th>Mahasiswa 7</th>
+            <th>Mahasiswa 8</th>
+            <th>Mahasiswa 9</th>
+            <th>Mahasiswa 10</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
             <td>Aspek Penilaian 1</td>
             {[...Array(10)].map((_, index) => (
               <td key={index}>
@@ -103,22 +119,6 @@ const App = () => {
               </td>
             ))}
           </tr>
-          <tr>
-            <th></th>
-            <th>Mahasiswa 1</th>
-            <th>Mahasiswa 2</th>
-            <th>Mahasiswa 3</th>
-            <th>Mahasiswa 4</th>
-            <th>Mahasiswa 5</th>
-            <th>Mahasiswa 6</th>
-            <th>Mahasiswa 7</th>
-            <th>Mahasiswa 8</th>
-            <th>Mahasiswa 9</th>
-            <th>Mahasiswa 10</th>
-          </tr>
-        </thead>
-        <tbody>
-
         </tbody>
       </table>
       <button onClick={handleSimpan}>Simpan</button>
